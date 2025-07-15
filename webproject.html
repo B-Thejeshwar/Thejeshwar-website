@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSecure - Protecting Your Digital World</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      line-height: 2.65;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+      background:#0f172a;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 8px;
+      color: #0f172a;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero-text button:hover {
+      background: #0ea5e9;
+    }
+
+    .hero-img img {
+      max-width: 400px;
+      animation: float 3s ease-in-out infinite;
+      border-radius: 4px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    section.features {
+      background: #1e293b;
+      padding: 60px 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 30px;
+      border-radius: 12px;
+      width: 280px;
+      margin: 20px;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+      border-color: #38bdf8;
+    }
+
+    .feature-card i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    footer {
+      background: #0f172a;
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      border-top: 1px solid #334155;
+    }
+
+    .home{
+      color: #38bdf8;
+      
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-shield-alt"></i> CyberSecure</h1>
+    <nav>
+      <a class="home" href="webproject.html">Home</a>
+      <a href="service.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Defend. Detect. Protect.</h2>
+      <p>We provide top-tier cybersecurity solutions that ensure your data and digital infrastructure stay safe from evolving threats.</p>
+      <button onclick="location.href='service.html'">Get Started</button>
+    </div>
+    <div class="hero-img">
+      <img src="introimage.jpg" alt="Cybersecurity Icon" />
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <i class="fas fa-lock"></i>
+      <h3>Data Protection</h3>
+      <p>We secure your sensitive information using advanced encryption and privacy tools.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-user-secret"></i>
+      <h3>Threat Monitoring</h3>
+      <p>24/7 monitoring and threat detection to protect you in real-time.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-network-wired"></i>
+      <h3>Network Security</h3>
+      <p>Protect your networks with firewalls, VPNs, and intrusion prevention systems.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CyberSecure. All Rights Reserved.
+  </footer>
+</body>
+</html>

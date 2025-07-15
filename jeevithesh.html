@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroGrow Solutions</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #f5fff7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2e7d32;
+      padding: 20px 0;
+      color: white;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603898037225-dab6d5792055?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color:#1b5e20;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2e7d32;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      border: 1px solid #d9f0df;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: #388e3c;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background-color: #e8f5e9;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AgroGrow Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Agriculture Through Innovation</h1>
+    <p>We provide smart farming solutions, research-backed guidance, and sustainable methods to boost agricultural productivity.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Soil Testing</h3>
+        <p>Get expert soil analysis and nutrient recommendations tailored to your crop requirements.</p>
+      </div>
+      <div class="service">
+        <h3>Hydroponics Setup</h3>
+        <p>Design and install passive and active hydroponic systems for commercial and small-scale farms.</p>
+      </div>
+      <div class="service">
+        <h3>Farm Management</h3>
+        <p>Digitize your farm with IoT-based crop monitoring, water optimization, and yield prediction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📧 Email: info@agrogrow.com | 📞 Phone: +91 98765 43210</p>
+    <p>🌿 Let's grow smarter, together!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AgroGrow Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
